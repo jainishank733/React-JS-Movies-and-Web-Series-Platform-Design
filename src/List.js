@@ -10,10 +10,10 @@ const List = ({ md }) => {
                 md.map((md) => {
                     const {name, url} = md;
                     return(
-                        <article className="poster">
-                            <a href={url} target="_blank"><img src={movies_logo} alt={name}></img></a>
-                            <h4>{name}</h4>
-                        </article>
+                        <div className="poster">
+                            <a href={url} target="_blank"><img src={movies_logo} alt={name}/></a>
+                            <p>{name}</p>
+                        </div>
                     );
                 }
                 )
