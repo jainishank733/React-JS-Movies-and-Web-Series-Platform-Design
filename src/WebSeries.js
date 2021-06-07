@@ -1,13 +1,14 @@
 import './App.css';
 import { Route } from 'react-router-dom';
-import SeriesData from './SeriesData';
 import { useState } from 'react';
 import List2 from './List2';
+import dataFeed from './dataFeed';
+
 
 
 const WebSeries = () => {
 
-    const [ws, setws] = useState(SeriesData);
+    const [ws, setws] = useState(dataFeed);
 
     return (
         <>

@@ -1,13 +1,13 @@
 import './App.css';
 import { Route } from 'react-router-dom';
-import MoviesData from './MoviesData';
 import { useState } from 'react';
 import List from './List';
+import dataFeed from './dataFeed';
 
 
 const Movies = () => {
 
-    const [md, setmd] = useState(MoviesData);
+    const [md, setmd] = useState(dataFeed);
 
     return (
         <>
