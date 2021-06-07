@@ -13,7 +13,7 @@ const List2 = ({ ws }) => {
                     if(programType===program && releaseYear>=2010){
                         return(
                             <div className="poster">
-                                <a href={images.PosterArt.url} target="_blank"><img src={series_logo} alt={title}/></a>
+                                <a href={images.PosterArt.url} target="_blank"><img src={images.PosterArt.url} alt={title}/></a>
                                 <p>{title}</p>
                             </div>
                         );
