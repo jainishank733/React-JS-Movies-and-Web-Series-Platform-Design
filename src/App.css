@@ -7,21 +7,88 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading {
+  font-family: "Arial Black", sans-serif;
+  font-size: 4.5em;
+  letter-spacing: -1px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  position:relative;
+  top: -20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.movies-logo{
+  height: 33vmin;
+  width: 50vmin;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: antiquewhite;
+  float: auto;
+}
+
+.series-logo{
+  height: 33vmin;
+  width: 50vmin;
+  margin: 20px;
+  border-radius: 20px;
+  float: auto;
+}
+
+.poster {
+  width: 220px;
+  height: 220px;
+  margin-left: 25px;
+  float: left;
+}
+
+.poster img {
+  width:100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.poster h4 {
+  text-align: center;
+  font-size: 20px;
+  color: antiquewhite;
+}
+
+.logo-Style{
+  width: max-content;
+  height: 340px;
+  margin-left: 20px;
+  float: left;
+}
+
+.logo-Style button{
+  display: block;
+  border-color: transparent;
+  border-style: none;
+  margin: 10px;
+  margin-bottom: -28px;
+  background:tomato;
+  border-radius: 20px;
+}
+
+.logo-Style p{
+  color: antiquewhite;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+button img:hover{
+  border-color: antiquewhite;
+  cursor: pointer;
+  border-style: solid;
+  border-color:rgb(187, 36, 9);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo .series-logo .movies-logo{
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 .App-link {
